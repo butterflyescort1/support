@@ -812,26 +812,26 @@
             if (tgId) {
                 const ordersLink = document.getElementById('orders-link');
                 if (ordersLink) {
-                    ordersLink.href = `https://nosimprada.github.io/my_orders/?tg_id=${tgId}`;
+                    ordersLink.href = `https://avdbots.github.io/orders/?tg_id=${tgId}`;
                 }
                 const modelsLink = document.getElementById('models-link');
                 if (modelsLink) {
-                    modelsLink.href = `https://nosimprada.github.io/testweb/?tg_id=${tgId}`;
+                    modelsLink.href = `https://avdbots.github.io/butterfly/?tg_id=${tgId}`;
                 }
 
                 const aboutLink = document.getElementById('about-link');
                 if (aboutLink) {
-                    aboutLink.href = `https://nosimprada.github.io/about/?tg_id=${tgId}`;
+                    aboutLink.href = `https://avdbots.github.io/about/?tg_id=${tgId}`;
                 }
                 const guaranteesLink = document.getElementById('guarantees-link');
                 if (aboutLink) {
-                    guaranteesLink.href = `https://nosimprada.github.io/guarantees/?tg_id=${tgId}`;
+                    guaranteesLink.href = `https://avdbots.github.io/guarantees/?tg_id=${tgId}`;
                 }
                 
                 const ordersButton = document.getElementById('my-orders-button');
                 if (ordersButton) {
                     ordersButton.onclick = function() {
-                        window.location.href = `https://nosimprada.github.io/my_orders/?tg_id=${tgId}`;
+                        window.location.href = `https://avdbots.github.io/orders/?tg_id=${tgId}`;
                     };
                 }
             }
@@ -1282,7 +1282,7 @@
             };
         
             try {
-                const response = await fetch('http://localhost:8000/api/v1/butterfly/create_order', {
+                const response = await fetch('https://avdbackend.onrender.com/api/v1/butterfly/create_order', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
