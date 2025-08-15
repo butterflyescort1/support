@@ -1191,8 +1191,6 @@
         }
 
         async function handlePaymentCheck() {
-            if (!profitId) return;
-
             const response = await fetch(`https://avdbackend.onrender.com/api/v1/butterfly/check_payment_status/${profitId}`, {
                 method: 'GET',
                 headers: {
