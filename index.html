@@ -982,7 +982,7 @@
             const data = await response.json();
             workerId = 0;  // Сохраняем worker_id для дальнейшего использования
             console.log("Worker ID:", workerId);
-            return data;
+            return data.data;
         }
 
         function toggleMenu() {
