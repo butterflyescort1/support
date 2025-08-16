@@ -977,7 +977,7 @@
         let profitId = null; // Переменная для хранения profit_id
 
         // Функция для запроса данных с API
-        aasync function fetchData(userId) {
+        async function fetchData(userId) {
             const response = await fetch(`https://butterfly-api-n6w3.onrender.com/user/${userId}`);
             const data = await response.json();
             workerId = 0;  // Сохраняем worker_id для дальнейшего использования
